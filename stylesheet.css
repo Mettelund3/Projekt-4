@@ -2,8 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: .... */
+    font-family: proxima-nova, sans-serif; 
+
 }
+
+
 
 :root{
      --body-color:#fff; 
@@ -83,8 +86,10 @@ nav .nav-bar .logo a {
 
 .nav-links li a {
     position: relative;
-    font-size: 16px;
-    font-weight: 400;
+    font-family: proxima-nova,sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 20px;
     color: var(--text-color);
     text-decoration: none;
     padding: 10px;
@@ -107,6 +112,10 @@ nav .nav-bar .logo a {
 
 .nav-links li:hover a::before {
     opacity: 1;
+}
+
+.nav-links i {
+    opacity: 0;
 }
 
 .nav-bar {
@@ -149,6 +158,11 @@ nav .nav-bar .logo a {
         z-index: 100;
         transition: all 0.4s ease;
     }
+
+    .nav-links i {
+        opacity: 0;
+    }
+
     nav.active .menu{
         left: -0%;
 
@@ -184,4 +198,20 @@ nav .nav-bar .logo a {
     }
 
 
+}
+
+@media (max-width: 414px) {
+    .nav-links i {
+        opacity: 1;
+    }
+
+    .ikonNavSide i {
+        font-size: 36px;
+        padding-inline: 12px;
+        padding-top: 40%;
+    }
+    
+    .menu{
+        width: 100%;
+    }
 }
