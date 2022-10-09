@@ -124,12 +124,14 @@ nav .nav-bar .logo a {
 }
 
 .dark-light i{
-    position: absolute;
+    position: relative;
+    padding-inline: 20%;
     color: var(--text-color);
-    font-size: 22px;
+    font-size: 25px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
 
 
 @media (max-width: 1150px) {
