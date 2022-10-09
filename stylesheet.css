@@ -109,13 +109,12 @@ nav .nav-bar .logo a {
     opacity: 1;
 }
 
-.nav-bar .darkLight-searchBox {
+.nav-bar {
     display: flex;
     align-items: center;
 }
 
-.ikonNav .dark-light,
-.darkLight-searchBox .searchToggle {
+.ikonNav .dark-light{
     height: 40px;
     width: 40px;
     display: flex;
@@ -124,75 +123,13 @@ nav .nav-bar .logo a {
     margin: 0 5px;
 }
 
-.dark-light i,
-.searchToggle i {
+.dark-light i{
     position: absolute;
     color: var(--text-color);
     font-size: 22px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
-
-.dark-light i.sun {
-    opacity: 0;
-    pointer-events: none;
-}
-
-.dark-light.active i.sun {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.dark-light.active i.moon {
-    opacity: 0;
-    pointer-events: none;
-}
-
-
-.searchToggle i.cancel {
-    opacity: 0;
-    pointer-events: none;
-}
-
-.searchToggle.active i.cancel {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.searchToggle.active i.search {
-    opacity: 0;
-    pointer-events: none;
-}
-
-.searchBox {
-    position: relative;
-}
-
-.searchBox  {
-    position: absolute;
-    bottom: -85px;
-    right: 5px;
-    height:50px;
-    width: 300px;
-    display: flex;
-    align-items: center;
-    background-color: var(--nav-color);
-    padding: 3px;
-    border-radius: 6px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
-}
-
-.searchToggle.active ~ {
-    bottom: -74px;
-    opacity: 1;
-    pointer-events: auto;
-}
-
-
-
 
 
 @media (max-width: 1150px) {
