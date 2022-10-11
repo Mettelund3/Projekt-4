@@ -275,11 +275,18 @@ nav .nav-bar .logo a {
     color: #F4F7F7;
 }
 
+.social-links{
+    display: flex;
+    flex-direction: column;
+}
+
+
 .footer-col .social-links a {
     color: #F4F7F7;
     text-decoration: none;
     font-size: 20px;
 }
+
 
 .footer-col .social-links .footer-social {
     display: inline-block;
@@ -289,6 +296,6 @@ nav .nav-bar .logo a {
     display: inline-block;
 }
 
-.footer-col .social-links .footer-facebook {
+.footer-col .social-links .footer-facebook2 {
     display: inline-block;
 }
