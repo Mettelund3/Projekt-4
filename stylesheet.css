@@ -6,8 +6,6 @@
 
 }
 
-
-
 :root{
      --body-color:#fff; 
      --nav-color:#f4f4f4;
@@ -196,8 +194,6 @@ nav .nav-bar .logo a {
         display: block;
         margin-top: 20px;
     }
-
-
 }
 
 @media (max-width: 414px) {
@@ -214,4 +210,142 @@ nav .nav-bar .logo a {
     .menu{
         width: 100%;
     }
+}
+
+/* Footer */
+
+.footer {
+    background-color: #00454E;
+    color: #F4F7F7;
+    padding: 60px 0;
+    font-size: 14px;
+}
+
+.footer-skrift li a {
+    color: #F4F7F7;
+    text-decoration: none;
+    font-family: proxima-nova,sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 3px 0;
+    transition: all 0.3s ease;
+}
+
+.footer-skrift li a:hover {
+    padding-left: 10px;
+}
+
+.footer-container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col .social-links li {
+    list-style: none;
+    color: #F4F7F7;
+}
+
+
+.social-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-col .social-links .social-link {
+    color: #F4F7F7;
+    text-decoration: none;
+    font-size: 25px;
+    transition: all 0.3s ease;
+}
+
+.footer-col .social-links .social-link:hover {
+    padding-left: 10px;
+}
+
+.footer-col .social-links .footer-social {
+    display: inline-block;
+}
+
+.footer-col .social-links .footer-facebook1 {
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.footer-col .social-links .footer-facebook1:hover {
+    padding-left: 10px;
+}
+
+.footer-col .social-links .footer-facebook2 {
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.footer-col .social-links .footer-facebook2:hover {
+    padding-left: 10px;
+
+}
+
+.social-links p a {
+    color: #F4F7F7;
+    text-decoration: none;
+    padding: 2px;
+}
+
+@media(max-width: 1170px) {
+    .footer-col {
+        width: 25%;
+        margin-bottom: 50px;
+    }
+    .footer {
+        padding-left: 30px;
+    }
+}
+
+@media(max-width: 800px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 50px;
+    }
+    .footer {
+        padding-left: 40px;
+    }
+}
+
+@media(max-width: 520px) {
+    .footer-col {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .footer {
+        padding-left: 50px;
+    }
+}
+section {
+    height: 300px;
 }
