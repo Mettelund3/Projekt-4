@@ -11,7 +11,7 @@
      --nav-color:#00454E;
      --side-nav:#E4F1F0;
      --text-color: #f2f2f2;
-     --search-bar:#f2f2f2;
+     --search-bar:#070606;
      --search-text: #502314;   
 }
 
@@ -20,15 +20,7 @@ body {
     background-color: var(--body-color);
 }
 
-body.dark{
-    --body-color:#18191A; 
-    --nav-color:#242526;
-    --side-nav:#242526;
-    --text-color: #CCC;
-    --search-bar:#242526;
-    --search-text: #502314;  
 
-}
 
 nav {
     position: fixed;
