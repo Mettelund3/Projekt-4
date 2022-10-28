@@ -9,11 +9,11 @@
 
 
 :root{
-     --body-color:#fff; 
+     --body-color:#E4F1F0; 
      --nav-color:#f4f4f4;
-     --side-nav:#FFAA00;
-     --text-color: #502314;
-     --search-bar:#f2f2f2;
+     --side-nav:#584b3e;
+     --text-color: #482215;
+     --search-bar:#6e4b4b;
      --search-text: #502314;   
 }
 
@@ -22,15 +22,7 @@ body {
     background-color: var(--body-color);
 }
 
-body.dark{
-    --body-color:#18191A; 
-    --nav-color:#242526;
-    --side-nav:#242526;
-    --text-color: #CCC;
-    --search-bar:#242526;
-    --search-text: #502314;  
 
-}
 
 nav {
     position: fixed;
@@ -88,7 +80,7 @@ nav .nav-bar .logo a {
     position: relative;
     font-family: proxima-nova,sans-serif;
     font-weight: 700;
-    font-style: italic;
+    font-style: normal;
     font-size: 20px;
     color: var(--text-color);
     text-decoration: none;
@@ -129,6 +121,7 @@ nav .nav-bar .logo a {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
     margin: 0 5px;
 }
 
