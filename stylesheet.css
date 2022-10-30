@@ -7,10 +7,11 @@
 }
 
 :root{
-     --body-color:#fff; 
+     --body-color:#E4F1F0; 
      --nav-color:#00454E;
      --side-nav:#E4F1F0;
      --text-color: #f2f2f2;
+     --text-color-dark:#00454E;
      --search-bar:#070606;
      --search-text: #502314;   
 }
@@ -56,7 +57,7 @@ nav .nav-bar .sidebarOpen {
 nav .nav-bar .logo a {
     font-size: 25px;
     font-weight: 500;
-    color: var(--search-text);
+    color: var(--text-color-dark);
     text-decoration: none;
 }
 
@@ -102,10 +103,12 @@ nav .nav-bar .logo a {
 
 .nav-links li:hover a::before {
     opacity: 1;
+    
 }
 
 .nav-links i {
     opacity: 0;
+    
 }
 
 .nav-bar {
@@ -150,7 +153,19 @@ nav .nav-bar .logo a {
     }
 
     .nav-links i {
-        opacity: 0;
+        opacity: 1;
+    }
+
+    .nav-links li a {
+        color:var(--text-color-dark)
+
+    }
+
+    .ikonNavSide i {
+        font-size: 36px;
+        padding-inline: 12px;
+        padding-top: 40%;
+        color: var(--text-color-dark);
     }
 
     nav.active .menu{
@@ -172,7 +187,7 @@ nav .nav-bar .logo a {
     }
 
     .logo-toggle .sidebarClose{
-        color: var(--text-color);
+        color: var(--text-color-dark);
         font-size: 24px;
         cursor: pointer;
     }
