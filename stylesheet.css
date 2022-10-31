@@ -89,7 +89,7 @@ nav .nav-bar .logo a img  {
     letter-spacing: 0.5px;
     color: var(--text-color);
     text-decoration: none;
-    padding: 0 10px;
+    padding: 0 30px;
 }
 
 
@@ -99,9 +99,11 @@ nav .nav-bar .logo a img  {
     background-color: var(--text-color);
     height: 3px;
     width: 0%;
-    left: 0;
+    left: -10px;
     bottom: 0;
-    transform: scaleX(-50%); 
+    transform: scaleX(-50%);
+    transform-origin: bottom right;
+    transition: transform 0.25s linear; 
     opacity: 0;
     transition: all 0.3s ease;
 }
@@ -132,9 +134,9 @@ nav .nav-bar .logo a img  {
 
 .dark-light i{
     position: relative;
-    padding-inline: 20%;
+    padding-inline: 0 30px;
     color: var(--text-color);
-    font-size: 25px;
+    font-size: 30px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
