@@ -429,9 +429,9 @@ nav .nav-bar .logo a img  {
     flex-direction: row;
     justify-content: flex-end;
     color: #000;
-    margin-top: 100px;    
-    margin-left: 70%;
-    padding-right: 10%;  
+    margin-top: 100px;   
+     
+    width: 10%; 
 }
 
 .spKlub {
@@ -443,6 +443,7 @@ nav .nav-bar .logo a img  {
     font-size: 35px;
     font-weight: 800;
     padding-left: 10%;
+    width: 50%;
     
 }
 
