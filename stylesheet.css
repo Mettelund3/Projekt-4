@@ -13,12 +13,12 @@
      --text-color: #f2f2f2;
      --text-color-dark:#00454E;
      --klub-farve:#F1C9C0;
-     --search-text: #502314; 
+     --togglebt-klub: #9B3C7D; 
       
 }
 
 body {
-    height: 100vh;
+    height: 80vh;
     background-color: var(--body-color);
 }
 
@@ -413,16 +413,55 @@ nav .nav-bar .logo a img  {
 .multiselect-dropdown-all-selector {border-bottom:solid 1px #999;}
 
 /* start specifik Klub*/
+
+.headsection {
+    background-color: var(--klub-farve);
+    height: 150px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px; 
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+
 .spKlub {
 color: #00454E;
-background-color:var(--klub-farve);
-background-size: 95px;
+background-size: 100px;
 margin-top: 97px;
 font-family: proxima-nova,sans-serif;
 font-size: 25px;
 font-weight: 800;
 padding-left: 10%;
 padding-top: 2px;
+}
+
+
+
+
+.chesspic {
+    width: 100%;
+    height: auto;
+}
+
+.btbmedlem {
+    min-width: 40px;
+    min-height: 48px;
+    box-shadow: 3px 6px var(--text-color);
+    border: none;
+    border-radius: 5px;
+    background-color: var(--text-color);
+    font-family: proxima-nova,sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    display: inline-block;
+    color: var(--togglebt-klub);
+    cursor: pointer;
+    padding: 15px 32px;
 }
 
 
@@ -562,7 +601,4 @@ padding-top: 2px;
     .footer {
         padding-left: 50px;
     }
-}
-section {
-    height: 300px;
 }
