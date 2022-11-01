@@ -48,7 +48,7 @@ nav .nav-bar {
 
 nav .nav-bar .sidebarOpen {
     color: var(--text-color);
-    font-size: 25px;
+    font-size: 40px;
     letter-spacing: 0.5px;
     padding: 5px;
     cursor: pointer;
