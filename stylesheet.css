@@ -48,7 +48,7 @@ nav .nav-bar {
 
 nav .nav-bar .sidebarOpen {
     color: var(--text-color);
-    font-size: 40px;
+    font-size: 25px;
     letter-spacing: 0.5px;
     padding: 5px;
     cursor: pointer;
@@ -143,7 +143,7 @@ nav .nav-bar .logo a img  {
 
 
 
-@media (max-width: 1150px) {
+@media (max-width: 900px) {
     nav .nav-bar .sidebarOpen {
         display: block;
     }
