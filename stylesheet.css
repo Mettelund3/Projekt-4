@@ -12,8 +12,9 @@
      --side-nav:#E4F1F0;
      --text-color: #f2f2f2;
      --text-color-dark:#00454E;
-     --search-bar:#070606;
-     --search-text: #502314;   
+     --klub-farve:#F1C9C0;
+     --search-text: #502314; 
+      
 }
 
 body {
@@ -409,6 +410,21 @@ nav .nav-bar .logo a img  {
 .multiselect-dropdown span.maxselected {width:100%;}
 .multiselect-dropdown-all-selector {border-bottom:solid 1px #999;}
 
+/* start specifik Klub*/
+.spKlub {
+color: #00454E;
+background-color:var(--klub-farve);
+background-size: 95px;
+margin-top: 97px;
+font-family: proxima-nova,sans-serif;
+font-size: 25px;
+font-weight: 800;
+padding-left: 10%;
+padding-top: 2px;
+}
+
+
+/* end specifik Klub*/
 
 
 /* Footer */
