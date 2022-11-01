@@ -27,7 +27,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    height: 70px;
+    height: 100px;
     width: 100%;
     background-color: var(--nav-color);
     z-index: 100;
@@ -36,30 +36,35 @@ nav {
 nav .nav-bar {
     position: relative;
     height: 100%;
-    max-width: 1200px;
+    max-width: 1300px;
     width: 100%;
     background-color: var(--nav-color);
-    margin: 0 auto;
+    margin: auto;
     padding: 0 30px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 nav .nav-bar .sidebarOpen {
     color: var(--text-color);
     font-size: 25px;
+    letter-spacing: 0.5px;
     padding: 5px;
     cursor: pointer;
     display: none;
 }
 
-nav .nav-bar .logo a {
-    font-size: 25px;
-    font-weight: 500;
-    color: var(--text-color-dark);
-    text-decoration: none;
+nav .nav-bar .logo a img  {
+    width: 100%;
+    max-width: 60%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+   
 }
+
 
 .menu .logo-toggle {
     display: none;
@@ -81,29 +86,31 @@ nav .nav-bar .logo a {
     font-weight: 700;
     font-style: normal;
     font-size: 20px;
+    letter-spacing: 0.5px;
     color: var(--text-color);
     text-decoration: none;
-    padding: 10px;
+    padding: 0 30px;
 }
 
 
 .nav-links li a::before { 
     content:'';
     position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    height: 6px;
-    width: 6px;
-    border-radius: 50%;
     background-color: var(--text-color);
+    height: 3px;
+    width: 0%;
+    left: -10px;
+    bottom: 0;
+    transform: scaleX(-50%);
+    transform-origin: bottom right;
+    transition: transform 0.25s linear; 
     opacity: 0;
     transition: all 0.3s ease;
 }
 
 .nav-links li:hover a::before {
     opacity: 1;
-    
+    width: 40px;   
 }
 
 .nav-links i {
@@ -127,9 +134,9 @@ nav .nav-bar .logo a {
 
 .dark-light i{
     position: relative;
-    padding-inline: 20%;
+    padding-inline: 0 30px;
     color: var(--text-color);
-    font-size: 25px;
+    font-size: 30px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -152,14 +159,23 @@ nav .nav-bar .logo a {
         transition: all 0.4s ease;
     }
 
+    .logo-toggle{
+        width: 100%;
+        background-color: var(--nav-color);
+
+    }
+   
+    .nav-links li a::before{
+        background-color: var(--text-color-dark);
+    }
+
     .nav-links i {
         opacity: 1;
     }
 
     .nav-links li a {
-        color:var(--text-color-dark)
-
-    }
+        color:var(--text-color-dark);
+    }    
 
     .ikonNavSide i {
         font-size: 36px;
@@ -187,7 +203,7 @@ nav .nav-bar .logo a {
     }
 
     .logo-toggle .sidebarClose{
-        color: var(--text-color-dark);
+        color: var(--text-color);
         font-size: 24px;
         cursor: pointer;
     }
@@ -201,11 +217,21 @@ nav .nav-bar .logo a {
         display: block;
         margin-top: 20px;
     }
+
 }
 
 @media (max-width: 414px) {
     .nav-links i {
         opacity: 1;
+    }
+
+   
+    .navLogo a img{
+        margin: auto;
+        width: 50vw;
+        height: 50vh;
+        display: flex;
+        justify-content: space-between; 
     }
 
     .ikonNavSide i {
