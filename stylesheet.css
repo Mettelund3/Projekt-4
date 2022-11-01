@@ -154,7 +154,7 @@ nav .nav-bar .logo a img  {
         width: 320px;
         left: -100%;
         top: 0;
-        padding: 20px;
+        padding: 0;
         background-color: var(--side-nav);
         z-index: 100;
         transition: all 0.4s ease;
@@ -168,6 +168,7 @@ nav .nav-bar .logo a img  {
    
     .nav-links li a::before{
         background-color: var(--text-color-dark);
+        opacity: 1;
     }
 
     .nav-links i {
@@ -183,6 +184,7 @@ nav .nav-bar .logo a img  {
         padding-inline: 12px;
         padding-top: 40%;
         color: var(--text-color-dark);
+          
     }
 
     nav.active .menu{
