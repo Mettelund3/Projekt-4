@@ -13,7 +13,9 @@
      --text-color: #f2f2f2;
      --text-color-dark:#00454E;
      --klub-farve:#F1C9C0;
-     --togglebt-klub: #9B3C7D; 
+     --togglebt-klub: #9B3C7D;
+     --text-color:#47B9B3;
+     --profil-studier-farve:#47B9B3; 
       
 }
 
@@ -423,24 +425,20 @@ nav .nav-bar .logo a img  {
 .flex-item1{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    
+    align-items: flex-start;
     height: 80px;
     margin: 0 auto;
-    margin-top: 110px; 
+    margin-top: 120px; 
+    
 
 }
 
 .flex-item2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    
+    display: flex;    
     margin: 0 auto;
-    
-    
     height: 80px;
     margin-top: 110px; 
+    padding-left: 20px;
      
 }
 
@@ -448,28 +446,34 @@ nav .nav-bar .logo a img  {
 .flex-item2 p {
     font-family: proxima-nova,sans-serif;
     font-size: 25px;
+    font-weight: 500;
+    color: var(--profil-studier-farve) 
+    
 
 }
 
 .flex-item2 i {
     font-size: 30px;
-    padding-top: 5px;
+    padding-top: 20px;
+    color: var(--text-color-dark);
 
+}
+
+.flex-item2 p i {
+    
 }
 
 
 
-/*
-.spKlub {
+
+.flex-item1 h1 {
     color: #00454E; 
     font-family: proxima-nova,sans-serif;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 800;
-    width: 300px;
-    height: 80px;
-    margin-top: 110px;  
+
 }
-*/
+
 
 
 
