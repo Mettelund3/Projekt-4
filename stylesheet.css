@@ -416,38 +416,42 @@ nav .nav-bar .logo a img  {
 
 .container {
     display: flex;
-    flex-direction: row;
-   
-    height: 170px;
-    
+    flex-wrap: wrap;
+    background-color: var(--klub-farve);
    
 }
-.wrap1{
-   
+.flex-item1{
+    display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    flex-wrap: wrap; 
+    
+    height: 80px;
+    margin: 0 auto;
+    margin-top: 110px; 
 
 }
 
-.antaluser {
-   
+.flex-item2 {
+    display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    flex-wrap: wrap; 
-    width: 300px;
+    
+    margin: 0 auto;
+    
+    
     height: 80px;
     margin-top: 110px; 
-    padding-left: 4; 
+     
 }
 
-.antaluser p {
+
+.flex-item2 p {
     font-family: proxima-nova,sans-serif;
     font-size: 25px;
 
 }
 
-.antaluser i {
+.flex-item2 i {
     font-size: 30px;
     padding-top: 5px;
 
@@ -455,6 +459,7 @@ nav .nav-bar .logo a img  {
 
 
 
+/*
 .spKlub {
     color: #00454E; 
     font-family: proxima-nova,sans-serif;
@@ -462,10 +467,9 @@ nav .nav-bar .logo a img  {
     font-weight: 800;
     width: 300px;
     height: 80px;
-    margin-top: 110px;
-    
-    
+    margin-top: 110px;  
 }
+*/
 
 
 
