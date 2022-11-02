@@ -25,7 +25,9 @@ body {
     background-color: var(--body-color);
 }
 
-
+img {
+    max-width: 100%;
+}
 
 nav {
     position: fixed;
@@ -532,9 +534,7 @@ nav .nav-bar .logo a img  {
     padding-top: 20px;
 }
 
-.flex-item2 p i {
-    
-}
+
 
 .bxs-face {
     color: var(--text-color-dark);
@@ -584,6 +584,7 @@ h2.h2klub {
     font-family: proxima-nova,sans-serif;
     font-size: 30px;
     font-weight: 800;
+    margin-top: 5%;
 
 }
 
@@ -630,13 +631,15 @@ h2.besk {
     font-family: proxima-nova,sans-serif;
     font-size: 30px;
     font-weight: 800;
+    padding-left: 10px;
+    padding-top: 14px;
+    margin-top: 5%;
 
 }
 
 .box2 {
-    width: 600px;
-    height: 240px;
-
+    width: 500px;
+    height: 300px;
     background-color: var(--text-box);
     box-shadow: 3px 6px var(--text-color); 
 }
@@ -650,22 +653,24 @@ p.besktext {
 }
 
 h3.mode {
-    
     color: #00454E; 
     font-family: proxima-nova,sans-serif;
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 800;
     padding-left: 10px;
     padding-top: 14px;
+    margin-top: 5%;
 }
 
 p.date {
     color: #00454E; 
     font-family: proxima-nova,sans-serif;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 500;
+    line-height: 1.5em;
     padding-left: 10px;
     padding-top: 14px;
+    margin-right: 2em;
     
 
 }
@@ -683,32 +688,47 @@ p.info {
 
 .box3 {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    width: 300px;
-    height: 300px;
-    margin-top: 40px;
     background-color: var(--text-box);
     box-shadow: 3px 6px var(--text-color); 
-
-}
-
-.nextmeeting {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-
-p.box3  {
     
 }
 
-.imgmap {
-   height: 400px;
-   width: 400px;
+
+
+.split {
+    display: flex;
+    justify-content: space-between;
 }
 
+
+.imgmap {
+     
+    height: 300px;
+    width: 300px;
+}
+
+.btntilb {
+    
+    min-width: 40px;
+    min-height: 48px;
+    box-shadow: 3px 6px var(--text-color);
+    border: none;
+    border-radius: 5px;
+    background-color:var(--text-color);
+    font-family: proxima-nova,sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+    color: var(--text-color-dark);
+    cursor: pointer;
+    padding: 15px 32px;
+    margin-top: 10%;
+    
+
+}
 
 /*tilføj hover btn + toggle + js */
 
