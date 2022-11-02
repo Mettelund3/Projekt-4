@@ -494,6 +494,7 @@ nav .nav-bar .logo a img  {
     display: flex;
     flex-wrap: wrap;
     background-color: var(--klub-farve);
+    
    
 }
 .flex-item1{
@@ -502,8 +503,7 @@ nav .nav-bar .logo a img  {
     align-items: flex-start;
     height: 80px;
     margin: 0 auto;
-    margin-top: 120px; 
-    
+    margin-top: 120px;     
 
 }
 
@@ -522,6 +522,7 @@ nav .nav-bar .logo a img  {
     font-size: 25px;
     font-weight: 500;
     color: var(--profil-studier-farve); 
+    padding-right: 10px;
     
 
 }
@@ -549,15 +550,36 @@ nav .nav-bar .logo a img  {
 }
 
 main {
-    margin: 0 auto;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.clubad {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 150px;
+    
+
 }
 
 .box1 {
+    display: flex;
+    flex-wrap: wrap;
     width: 400px;
     height: 60px;
     background-color: var(--text-box);
-    box-shadow: 3px 6px var(--text-color);
+    box-shadow: 3px 6px var(--text-color);   
 }
+
+.admin{
+    display: flex;
+    flex-direction: row
+    flex
+    
+    
+}
+
 
 
 
@@ -579,7 +601,7 @@ main {
     font-weight: 700;
     text-align: center;
     position: relative;
-    left: 90px;
+    margin-left: 5%;
     bottom: 40px;
     color: var(--togglebt-klub);
     cursor: pointer;
