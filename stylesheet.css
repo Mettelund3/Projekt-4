@@ -302,7 +302,7 @@ nav .nav-bar .logo a img  {
     font-family: proxima-nova,sans-serif;
     font-size: 25px;
     font-weight: 800;
-    padding-left: 3%;
+    padding-left: 3.5%;
     padding-top: 2px;
 }
 
@@ -392,7 +392,6 @@ nav .nav-bar .logo a img  {
     color: #FFFFFF;
     cursor: pointer;
 }
-
 
 /* Filter */
 
