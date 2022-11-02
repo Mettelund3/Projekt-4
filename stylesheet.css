@@ -15,7 +15,8 @@
      --klub-farve:#F1C9C0;
      --togglebt-klub: #9B3C7D;
      --text-color-light:#47B9B3;
-     --profil-studier-farve:#47B9B3; 
+     --profil-studier-farve:#47B9B3;
+     --text-box: #f2f2f2;
       
 }
 
@@ -472,9 +473,18 @@ nav .nav-bar .logo a img  {
     font-family: proxima-nova,sans-serif;
     font-size: 30px;
     font-weight: 800;
-
 }
 
+main {
+    margin: 0 auto;
+}
+
+.box1 {
+    width: 400px;
+    height: 60px;
+    background-color: var(--text-box);
+    box-shadow: 3px 6px var(--text-color);
+}
 
 
 
