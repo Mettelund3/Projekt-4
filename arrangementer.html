@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forside</title>
+    <title>Arrangementer</title>
     <link rel="stylesheet" href="stylesheet.css">
     <script src="script.js" defer></script>     
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -53,26 +53,83 @@
    </nav> 
 
    <section>
-        <h1 class="h1arrangement">Arrangementer</h1>
-        <h2 class="h2arrangement">Find eller opret arrangementer der passer til dig</h2>
-        <a href="opretarrangement.html"><button class="opretarrangement">Opret arrangement</button></a>
-        <select class="afdelinger" name="Afdelinger" multiple> Afdelinger
-            <option>Seebladsgade</option>
-            <option>Niels Bohrs Allé</option>
-            <option>Fredericia</option>
-            <option>Vejle</option>
-            <option>Jelling</option>
-            <option>Svendborg</option>
-        </select>
+        <div class="klubbermarkering">
+            <h1 class="h1arrangement">Arrangementer</h1>
+            <h2 class="h2arrangement">Find eller opret arrangementer der passer til dig</h2>
+        </div>
+        <div class="hej">
+            <a href="opretarrangement.html"><button class="opretarrangement">Opret arrangement</button></a>
+            <select class="afdelinger" name="Afdelinger" multiple> Afdelinger
+                <option>Seebladsgade</option>
+                <option>Niels Bohrs Allé</option>
+                <option>Fredericia</option>
+                <option>Vejle</option>
+                <option>Jelling</option>
+                <option>Svendborg</option>
+            </select>
+        </div>
     </section>
-    <section>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laudantium magnam deserunt praesentium architecto dolores cumque ad tenetur temporibus neque dolor sapiente, est assumenda similique eum debitis aspernatur nisi harum.</p>
+    <section class="arrangement2">
+        <div class="arrangementcard">
+            <div class="card">
+                <img class="banner" src="images/braetspil.png" alt="Brætspilscafé">
+                <div class="containerarrangement">
+                    <h4><b>Brætspilsdag</b></h4> 
+                    <p class="cardp">Du og dine medstuderende kan få nogle hyggelige timer med brætspil.</p> 
+                    <button class="laesmere">Læs Mere</button>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img class="banner" src="images/motionslob.png" alt="motionsløb banner">
+                <div class="containerarrangement">
+                    <h4><b>Motionsløb</b></h4> 
+                    <p class="cardp">UCL Motionsløb starter fra Seebladsgade 1. Løbet har 2 ruter på 5 km eller 10 km.</p> 
+                    <button class="laesmere">Læs Mere</button>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img class="banner" src="images/uclfest.png" alt="ucl fest banner">
+                <div class="containerarrangement">
+                    <h4><b>UCL Fest</b></h4> 
+                    <p class="cardp">Så er det tid igen til kæmpe fest i Hal D, skynd dig at købe billet!</p> 
+                    <button class="laesmere">Læs Mere</button>
+                </div>
+            </div>
+        </div>
+        <div class="arrangementcard">
+            <div class="card">
+                <img class="banner" src="images/lolturnering.png" alt="lol turnering banner">
+                <div class="containerarrangement">
+                    <h4><b>UCL ARAM Turnering</b></h4> 
+                    <p class="cardp">League of Legends ARAM turnering på tværs af vores campusser for alle.</p> 
+                    <button class="laesmere">Læs Mere</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="banner" src="images/beerbox.png" alt="Beerbox fredagsbar banner">
+                <div class="containerarrangement">
+                    <h4><b>UCL Fredagsbar</b></h4> 
+                    <p class="cardp">Beerbox inviterer dig til ugentlig fredagsbar på Seebladsgade.</p> 
+                    <button class="laesmere">Læs Mere</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="banner" src="images/uclfc.png" alt="UCL fc banner">
+                <div class="containerarrangement">
+                    <h4><b>UCL FC Fodboldkamp</b></h4> 
+                    <p class="cardp">Kom og støt UCL FC i et lokalopgør mod Tommerup i en serie 2 kamp.</p> 
+                    <button class="laesmere">Læs Mere</button>
+                </div>
+            </div>
+        </div>
     </section>
 
     <Footer class="footer">
         <div class="footer-container">
             <div class="footer-row">
-                <div class="footer-col">
+                <div class="footer-col"> 
                     <h4>Om Os</h4>
                     <ul class="footer-skrift">
                         <li><a href="https://www.ucl.dk/om-os">Om os</a></li>
