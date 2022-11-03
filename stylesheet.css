@@ -496,9 +496,14 @@ nav .nav-bar .logo a img  {
     display: flex;
     flex-wrap: wrap;
     background-color: var(--klub-farve);
-    
-   
 }
+
+.containera {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FBE355;
+}
+
 .flex-item1{
     display: flex;
     flex-direction: row;
@@ -668,9 +673,38 @@ p.adminstyle {
     flex-direction: column;
     width: 500px;
     height: 150px;
-    
-
 }
+
+.arrangad {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 500px;
+    height: 150px;
+    
+}
+
+.box1a {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 400px;
+    height: 60px;
+    background-color: var(--text-box);
+    box-shadow: 3px 6px var(--text-color);   
+}
+
+.box1a p {
+    display: inline-block;
+    
+}
+
+.box1a img {
+    display:inline-block;
+    margin-left: 400px;
+    margin-top:-90px ;
+}
+
 
 .box1 {
     display: flex;
@@ -701,6 +735,23 @@ h2.besk {
     padding-top: 14px;
     margin-top: 5%;
 
+}
+
+.box2a {
+    width: 500px;
+    height: 350px;
+    background-color: var(--text-box);
+    box-shadow: 3px 6px var(--text-color); 
+}
+p.besktexta {
+    color: #00454E; 
+    font-family: proxima-nova,sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-top: 14px;
+    padding-right: 5px;
+    line-height: 1.5em;
 }
 
 .box2 {
