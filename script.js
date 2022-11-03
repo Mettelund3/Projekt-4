@@ -201,16 +201,16 @@ var data = createDummyData();
 // initializing a new calendar object, that will use an html container to create itself
 var calendar = new Calendar(
   "calendarContainer", // id of html container for calendar
-  "small", // size of calendar, can be small | medium | large
+  "medium", // size of calendar, can be small | medium | large
   [
     "Wednesday", // left most day of calendar labels
     3 // maximum length of the calendar labels
   ],
   [
-    "#E91E63", // primary color
-    "#C2185B", // primary dark color
-    "#FFFFFF", // text color
-    "#F8BBD0" // text dark color
+    "#47B9B3", // primary color
+    "#00454E", // primary dark color
+    "#E4F1F0", // text color
+    "#FBE355", // text dark color
   ]
 );
 

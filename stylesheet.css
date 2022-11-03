@@ -904,16 +904,20 @@ p.info {
     -webkit-align-content: center;
     -ms-flex-line-pack: center;
     align-content: center;
+    
+    
   }
   
   #calendarContainer,
   #organizerContainer {
     float: left;
-    margin: 5px;
+    margin-bottom: 10%
+    
+    
   }
   
   .cal_header {
-    font-family: "flame-bold";
+    font-family: proxima-nova,sans-serif;
     text-align: center;
     color: #f5ebdc;
     margin-top: -5px;
