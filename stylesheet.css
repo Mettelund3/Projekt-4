@@ -756,8 +756,44 @@ p.info {
     display: flex;
     flex-direction: row;
     background-color: var(--text-box);
-    box-shadow: 3px 6px var(--text-color); 
+    box-shadow: 3px 6px var(--text-color);     
+}
+
+.janej {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     
+}
+
+.move {
+    margin-left: 10%;
+    margin-top: -15px;   
+}
+
+.yes {
+    width: 90px;
+    height: 35px;
+    border-radius: 5px;
+    color: #21A158;
+    font-family: proxima-nova,sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    border-color:#21A158;
+    cursor: pointer;
+}
+
+.no {
+    width: 90px;
+    height: 35px;
+    border-radius: 5px;
+    color: #E62727;
+    font-family: proxima-nova,sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    border-color:#E62727;
+    cursor: pointer;
+    margin-left: 20px;
 }
 
 
@@ -801,7 +837,7 @@ p.info {
     cursor: pointer;
 }
 
-/*tilføj hover btn + toggle + js */
+
 
 
 /* end specifik Klub*/
