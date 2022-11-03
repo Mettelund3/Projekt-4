@@ -846,6 +846,46 @@ p.info {
 /* end specifik Klub*/
 
 
+/* start Kalender */
+.kalenderhead{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    background-color: var(--text-color-light);
+    margin-top: 100px;
+}
+
+.h1kalender  {
+    color: #00454E; 
+    font-family: proxima-nova,sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    margin-left: 5%;
+    padding-top: 14px;
+    
+}
+
+.h2not {
+    color: #00454E; 
+    font-family: proxima-nova,sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+
+.notBox {
+    background-color: #f2f2f2;
+    width: 1000px;
+    height: 100px;
+
+}
+
+/*end Kalender */
+
+
 /* Footer */
 
 .footer {
