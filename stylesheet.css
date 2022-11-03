@@ -558,25 +558,91 @@ main {
     width: 100%;
     height: auto;
 }
+/* start  toggle Bliv medlem*/
+.toggle {
+    --width: 250px;
+    --height: calc(var(--width) / 3);
 
-.btbmedlem {
-    min-width: 40px;
-    min-height: 48px;
-    box-shadow: 3px 6px var(--text-color);
-    border: none;
-    border-radius: 5px;
-    background-color:var(--text-color);
+    position: relative;
+    display: inline-block;
+    width: var(--width);
+    height: var(--height);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    top: -50px;
+    margin-left: 5%;
+  }
+
+  .toggle input {
+    display: none;
+  }
+
+  .toggle .labels {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
     font-family: proxima-nova,sans-serif;
     font-size: 25px;
     font-weight: 700;
-    text-align: center;
-    position: relative;
-    margin-left: 5%;
-    bottom: 40px;
+    transition: all 0.4s ease-in-out;
+    
+   
+  }
+
+  .toggle .labels::after {
+    content: attr(data-off);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    width: 100%;
     color: var(--togglebt-klub);
-    cursor: pointer;
-    padding: 15px 32px;
-}
+    background-color: var(--text-box);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    transition: all 0.4s ease-in-out;
+    
+    
+  }
+
+  .toggle .labels::before {
+    content: attr(data-on);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+    background-color: var(--togglebt-klub);
+    text-align: center;
+    opacity: 0;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4);
+    transition: all 0.4s ease-in-out;
+    
+  }
+
+  .toggle input:checked~.labels::after {
+    /* flip 180deg */
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+
+  .toggle input:checked~.labels::before {
+    transform: rotateY(180deg) scale(-1, 1);
+    opacity: 1;
+  }
+/* end toggle Bliv medlem*/
+
+
+
+
 
 
 h2.h2klub {
@@ -726,8 +792,13 @@ p.info {
     cursor: pointer;
     padding: 15px 32px;
     margin-top: 10%;
-    
+}
 
+.btntilb:hover {
+    background-color:var(--nav-color);
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
 }
 
 /*tilføj hover btn + toggle + js */
