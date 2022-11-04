@@ -25,7 +25,9 @@ body {
     background-color: var(--body-color);
 }
 
-
+img {
+    max-width: 100%;
+}
 
 nav {
     position: fixed;
@@ -739,16 +741,21 @@ nav .nav-bar .logo a img  {
     display: flex;
     flex-wrap: wrap;
     background-color: var(--klub-farve);
-   
 }
+
+.containera {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FBE355;
+}
+
 .flex-item1{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     height: 80px;
     margin: 0 auto;
-    margin-top: 120px; 
-    
+    margin-top: 120px;     
 
 }
 
@@ -767,6 +774,7 @@ nav .nav-bar .logo a img  {
     font-size: 25px;
     font-weight: 500;
     color: var(--profil-studier-farve); 
+    padding-right: 10px;
     
 
 }
@@ -776,9 +784,7 @@ nav .nav-bar .logo a img  {
     padding-top: 20px;
 }
 
-.flex-item2 p i {
-    
-}
+
 
 .bxs-face {
     color: var(--text-color-dark);
@@ -794,25 +800,317 @@ nav .nav-bar .logo a img  {
 }
 
 main {
-    margin: 0 auto;
+    margin-left: 5%;
+    margin-right: 5%;
 }
-
-.box1 {
-    width: 400px;
-    height: 60px;
-    background-color: var(--text-box);
-    box-shadow: 3px 6px var(--text-color);
-}
-
-
-
 
 .chesspic {
     width: 100%;
     height: auto;
 }
+/* start  toggle Bliv medlem*/
+.toggle {
+    --width: 250px;
+    --height: calc(var(--width) / 3);
 
-.btbmedlem {
+    position: relative;
+    display: inline-block;
+    width: var(--width);
+    height: var(--height);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    top: -50px;
+    margin-left: 5%;
+  }
+
+  .toggle input {
+    display: none;
+  }
+
+  .toggle .labels {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: proxima-nova,sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    transition: all 0.4s ease-in-out;
+    
+   
+  }
+
+  .toggle .labels::after {
+    content: attr(data-off);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: var(--togglebt-klub);
+    background-color: var(--text-box);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    transition: all 0.4s ease-in-out;
+    
+    
+  }
+
+  .toggle .labels::before {
+    content: attr(data-on);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+    background-color: var(--togglebt-klub);
+    text-align: center;
+    opacity: 0;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4);
+    transition: all 0.4s ease-in-out;
+    
+  }
+
+  .toggle input:checked~.labels::after {
+    /* flip 180deg */
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+
+  .toggle input:checked~.labels::before {
+    transform: rotateY(180deg) scale(-1, 1);
+    opacity: 1;
+  }
+/* end toggle Bliv medlem*/
+
+
+
+
+
+
+h2.h2klub {
+    color: #00454E; 
+    font-family: proxima-nova,sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 5%;
+
+}
+
+p.adminstyle {
+    color: #00454E; 
+    font-family: proxima-nova,sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-top: 14px;
+}
+.klubad {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 500px;
+    height: 150px;
+}
+
+.arrangad {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 500px;
+    height: 150px;
+    
+}
+
+.box1a {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 400px;
+    height: 60px;
+    background-color: var(--text-box);
+    box-shadow: 3px 6px var(--text-color);   
+}
+
+.box1a p {
+    display: inline-block;
+    
+}
+
+.box1a img {
+    display:inline-block;
+    margin-left: 400px;
+    margin-top:-90px ;
+}
+
+
+.box1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 400px;
+    height: 60px;
+    background-color: var(--text-box);
+    box-shadow: 3px 6px var(--text-color);   
+}
+
+.box1 p {
+    display: inline-block;
+}
+
+.box1 img {
+    display:inline-block;
+    margin-left: 350px;
+    margin-top:-100px ;
+}
+
+h2.besk {
+    color: #00454E; 
+    font-family: proxima-nova,sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    padding-left: 10px;
+    padding-top: 14px;
+    margin-top: 5%;
+
+}
+
+.box2a {
+    width: 500px;
+    height: 350px;
+    background-color: var(--text-box);
+    box-shadow: 3px 6px var(--text-color); 
+}
+p.besktexta {
+    color: #00454E; 
+    font-family: proxima-nova,sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-top: 14px;
+    padding-right: 5px;
+    line-height: 1.5em;
+}
+
+.box2 {
+    width: 500px;
+    height: 300px;
+    background-color: var(--text-box);
+    box-shadow: 3px 6px var(--text-color); 
+}
+p.besktext {
+    color: #00454E; 
+    font-family: proxima-nova,sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-top: 14px;
+}
+
+h3.mode {
+    color: #00454E; 
+    font-family: proxima-nova,sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    padding-left: 10px;
+    padding-top: 14px;
+    margin-top: 5%;
+}
+
+p.date {
+    color: #00454E; 
+    font-family: proxima-nova,sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5em;
+    padding-left: 10px;
+    padding-top: 14px;
+    margin-right: 2em;
+    
+
+}
+
+p.info {
+    color: #00454E; 
+    font-family: proxima-nova,sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 10px;
+    
+   
+
+}
+
+.box3 {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--text-box);
+    box-shadow: 3px 6px var(--text-color);     
+}
+
+.janej {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.move {
+    margin-left: 20%;
+    margin-top: -15px;   
+}
+.bibu{
+    font-weight: 600;
+}
+
+.yes {
+    width: 90px;
+    height: 35px;
+    border-radius: 5px;
+    color: #21A158;
+    font-family: proxima-nova,sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    border-color:#21A158;
+    cursor: pointer;
+}
+
+.no {
+    width: 90px;
+    height: 35px;
+    border-radius: 5px;
+    color: #E62727;
+    font-family: proxima-nova,sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    border-color:#E62727;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+
+
+.split {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.imgmap {
+     
+    height: 300px;
+    width: 300px;
+}
+
+.btntilb {
+    
     min-width: 40px;
     min-height: 48px;
     box-shadow: 3px 6px var(--text-color);
@@ -824,16 +1122,104 @@ main {
     font-weight: 700;
     text-align: center;
     position: relative;
-    left: 90px;
     bottom: 40px;
-    color: var(--togglebt-klub);
+    color: var(--text-color-dark);
     cursor: pointer;
     padding: 15px 32px;
+    margin-top: 10%;
 }
-/*tilføj hover btn + toggle + js */
+
+.btntilb:hover {
+    background-color:var(--nav-color);
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+}
+
+
 
 
 /* end specifik Klub*/
+
+
+/* start Kalender */
+.kalenderhead{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    background-color: var(--text-color-light);
+    margin-top: 100px;
+}
+
+.h1kalender  {
+    color: #00454E; 
+    font-family: proxima-nova,sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    margin-left: 5%;
+    padding-top: 14px;
+    
+}
+
+.h2not {
+    color: #00454E; 
+    font-family: proxima-nova,sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+
+.notBox {
+    background-color: #f2f2f2;
+    width: 1000px;
+    height: 100px;
+
+}
+
+/* Calendar */
+
+.calender {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    
+    
+  }
+  
+  #calendarContainer,
+  #organizerContainer {
+    float: left;
+    margin-bottom: 10%
+    
+    
+  }
+  
+  .cal_header {
+    font-family: proxima-nova,sans-serif;
+    text-align: center;
+    color: #f5ebdc;
+    margin-top: -5px;
+  }
+/* Calendar */
+/*end Kalender */
 
 
 /* Footer */
