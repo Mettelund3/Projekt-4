@@ -258,7 +258,7 @@ nav .nav-bar .logo a img  {
     display: flex;
     background-color: #F1C9C0;
     flex-direction: column;
-    justify-content: space-around;
+    width: 100%;
 }
 .h1klubber {
     color: #00454E;
@@ -288,8 +288,6 @@ nav .nav-bar .logo a img  {
     justify-content: space-between;
     justify-content: space-around;
     max-width: 1300px;
-    margin-left: 3%;
-    margin-right: 3%;
 }
 
 .cardp {
@@ -343,8 +341,12 @@ nav .nav-bar .logo a img  {
 }
 
 .card {
+    display: block;
     height: 200px;
     width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
 }
 
 .banner {
@@ -355,12 +357,13 @@ nav .nav-bar .logo a img  {
 .arrangementcard {
     display: flex;
     flex-direction: row;
-    margin: auto;
-    justify-content: space-between;
-    justify-content: space-around;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
     max-width: 1300px;
-    margin-bottom: 200px;
+    margin: auto;
 }
+
 
 .containerarrangement {
     background-color: #ffffff;
@@ -383,7 +386,7 @@ nav .nav-bar .logo a img  {
     font-weight: 600;
     font-size: 14px;
     border-radius: 2px;
-    border: none;
+    border-color: #00454E;
     height: 45px;
     width: 120px;
     margin-left: 190px;
@@ -395,6 +398,248 @@ nav .nav-bar .logo a img  {
     color: #FFFFFF;
     cursor: pointer;
 }
+
+.laesmerepil {
+    margin-left: 5px;
+}
+
+@media (max-width: 1150px) {
+    .card {
+        height: 200px;
+        width: 300px;
+        margin-bottom: 200px;
+
+    }
+    
+    .banner {
+        height: 200px;
+        width: 300px;
+    }
+    .cardp {
+        width: 160px;
+        font-size: 11px;
+    }
+    .containerarrangement {
+        height: 120px;
+        width: 300px;
+        padding: 20px;
+        margin-top: -10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .card {
+        height: 200px;
+        width: 300px;
+        margin-bottom: 200px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    .banner {
+        height: 200px;
+        width: 300px;
+    }
+    .cardp {
+        width: 150px;
+        font-size: 11px;
+    }
+    .containerarrangement {
+        height: 120px;
+        width: 300px;
+        padding: 20px;
+        margin-top: -10px;
+    }
+    .arrangement2 {
+        margin-bottom: 200px; 
+    }
+    .laesmere {
+        font-size: 13px;
+        height: 45px;
+        width: 120px;
+        margin-left: 145px;
+        margin-top: 5px;
+    }
+    .laesmerepil {
+        margin-left: 5px;
+        height: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .card {
+        height: 150px;
+        width: 250px;
+        margin-bottom: 200px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+    .banner {
+        height: 150px;
+        width: 250px;
+    }
+    .cardp {
+        width: 112px;
+        font-size: 11px;
+    }
+    .containerarrangement {
+        height: 120px;
+        width: 250px;
+        padding: 20px;
+        margin-top: -10px;
+    }
+    .arrangement2 {
+        margin-bottom: 100px; 
+    }
+    .laesmere {
+        font-size: 12px;
+        height: 40px;
+        width: 110px;
+        margin-left: 110px;
+        margin-top: -10px;
+    }
+    .laesmerepil {
+        margin-left: 5px;
+        height: 10px;
+    }
+}
+
+@media (max-width: 660px) {
+    .card {
+        height: 150px;
+        width: 250px;
+        margin-bottom: 200px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+    .banner {
+        height: 150px;
+        width: 250px;
+    }
+    .cardp {
+        width: 120px;
+        font-size: 11px;
+    }
+    .containerarrangement {
+        height: 120px;
+        width: 250px;
+        padding: 20px;
+        margin-top: -10px;
+    }
+    .arrangement2 {
+        margin-bottom: 1150px; 
+    }
+    .laesmere {
+        font-size: 12px;
+        height: 40px;
+        width: 110px;
+        margin-left: 110px;
+        margin-top: -10px;
+    }
+    .laesmerepil {
+        margin-left: 5px;
+        height: 10px;
+    }
+}
+
+/* Studierabat */
+
+.h1studierabat {
+    color: #00454E;
+    background-color: #E07057;
+    background-size: 95px;
+    margin-top: 97px;
+    font-family: proxima-nova,sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    padding-left: 3.5%;
+    padding-top: 2px;
+}
+
+.h2studierabat {
+    color: #00454E;
+    background-color: #E07057;
+    background-size: 95px;
+    font-family: proxima-nova,sans-serif;
+    font-size: 14px;
+    margin-top: -3px;
+    padding-top: -6px;
+    padding-bottom: 4px;
+    padding-left: 3.5%;
+}
+
+.studierabatcard {
+    display: block;
+    height: 200px;
+    width: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 200px; 
+}
+
+.cardstudierabat {
+    width: 200px;
+    font-size: 14px;
+}
+
+.studierabat {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.studierabat2 {
+    margin-top: 70px;
+    height: 1000px;
+}
+
+.bannerstudierabat {
+    height: 200px;
+    width: 200px;
+    background-color: #ffffff;
+}
+
+.containerstudierabat {
+    background-color: #ffffff;
+    height: 150px;
+    width: 200px;
+    padding: 20px;
+    margin-top: -10px;
+    text-align: center;
+}
+
+.pstudierabat {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.laesmerestudierabat {
+    color: #00454E;
+    background-color: #ffffff;
+    padding: 8px 15px;
+    font-family: proxima-nova,sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 2px;
+    height: 45px;
+    width: 120px;
+    border-color: #00454E;
+    align-items: center;
+}
+
+.laesmerestudierabat:hover {
+    background-color: #00454E;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
 
 /* Filter */
 
