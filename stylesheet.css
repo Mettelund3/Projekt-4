@@ -895,6 +895,7 @@ main {
 
 
 
+
 h2.h2klub {
     color: #00454E; 
     font-family: proxima-nova,sans-serif;
@@ -1033,8 +1034,6 @@ p.date {
     padding-left: 10px;
     padding-top: 14px;
     margin-right: 2em;
-    
-
 }
 
 p.info {
@@ -1136,14 +1135,174 @@ p.info {
     cursor: pointer;
 }
 
+@media (max-width: 1200px) {
+
+    .box3 {
+        display: flex;
+        flex-direction: row;
+        background-color: var(--text-box);
+        box-shadow: 3px 6px var(--text-color);     
+    }
+    p.date {
+        color: #00454E; 
+        font-family: proxima-nova,sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.5em;
+        padding-left: 10px;
+        padding-top: 14px;
+        margin-right: 2em;
+    } 
+    p.besktext {
+        color: #00454E; 
+        font-family: proxima-nova,sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        padding-left: 10px;
+        padding-top: 14px;
+    }
+    .box2 {
+        position: relative;
+        width: 400px;
+        height: 300px;
+        background-color: var(--text-box);
+        box-shadow: 3px 6px var(--text-color); 
+    }
+}
+
+@media (max-width: 1050px) {
+    .box2 {
+        width: 300px;
+        height: 340px;
+        background-color: var(--text-box);
+        box-shadow: 3px 6px var(--text-color); 
+    }
+    p.date {
+        color: #00454E; 
+        font-family: proxima-nova,sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.5em;
+        padding-left: 10px;
+        padding-top: 14px;
+        margin-right: 2em;
+    } 
+    p.besktext {
+        color: #00454E; 
+        font-family: proxima-nova,sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        padding-left: 10px;
+        padding-top: 14px;
+    }
+    .move {
+        margin-left: 20%;
+        margin-top: -15px;   
+    }
+}
+@media (max-width: 1000px) {
+    .move {
+        margin-left: 50%;
+        margin-top: -150px;  
+
+    }
+    .imgmap {
+     
+        height: 200px;
+        width: 200px;
+    }
+
+}
+@media (max-width: 879px)  {
+    .move {
+        margin-left: 50%;
+        margin-top: -130px;  
+
+    }
+}
+@media (max-width: 783px) {
+    .move {
+        margin-left: 50%;
+        margin-top: -50px;  
+
+    }
+
+}
+@media (max-width: 783px) {
+    .split {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .move {
+        margin-left: 10%;
+        margin-top: -5px;  
+
+    }
+    p.date {
+        color: #00454E; 
+        font-family: proxima-nova,sans-serif;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 1.5em;
+        padding-left: 10px;
+        padding-top: 14px;
+        margin-right: 5em;
+    } 
+   
+    p.besktext {
+        color: #00454E; 
+        font-family: proxima-nova,sans-serif;
+        font-size: 22px;
+        font-weight: 500;
+        padding-left: 10px;
+        padding-top: 14px;
+    }
+    .imgmap {
+     
+        height: 300px;
+        width: 300px;
+    }
+
+    .box2 {
+        width: 670px;
+        height: 300px;
+        background-color: var(--text-box);
+        box-shadow: 3px 6px var(--text-color); 
+    }
+    .btntilb {
+    
+        min-width: 40px;
+        min-height: 48px;
+        box-shadow: 0px 2px 25px 1px rgba(0, 0, 0, 0.25);
+        border: none;
+        border-radius: 5px;
+        background-color:var(--text-color);
+        font-family: proxima-nova,sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+        position: relative;
+        bottom: 10px;
+        color: var(--text-color-dark);
+        cursor: pointer;
+        padding: 15px 32px;
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+}
+
+
 
 
 
 /* end specifik Klub*/
 
 
+
 /* start Kalender */
-.kalenderhead{
+.kalenderhead {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
