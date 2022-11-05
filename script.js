@@ -220,3 +220,5 @@ var organizer = new Organizer(
   calendar, // defining the calendar that the organizer is related to
   data // giving the organizer the static data that should be displayed
 );
+
+// Stort slideshow start // 
