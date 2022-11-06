@@ -25,10 +25,6 @@ body {
     background-color: var(--body-color);
 }
 
-img {
-    max-width: 100%;
-}
-
 nav {
     position: fixed;
     top: 0;
@@ -1852,6 +1848,9 @@ p.info {
 .wrapper {
     margin-top: 50px;
     margin-bottom: 50px;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    max-width: 500px;
     display:flex;
     grid-gap: 5px;
     width: 100%;
@@ -1889,7 +1888,7 @@ position:absolute;
 color: var(--text-color-dark);
 padding: 1px 1px;
 top: 81.1%;
-left: 56.1%;
+left: 56.3%;
 }
 
 .btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover {
@@ -1900,5 +1899,7 @@ left: 56.1%;
 }
 
 }
+
+
 
 /* Lille Slideshow slut */

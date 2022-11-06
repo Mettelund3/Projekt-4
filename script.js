@@ -87,10 +87,6 @@ function showSlides(n) {
 
 // Stort slideshow slut //
 
-
-
-
-
 // Filter funktion
 style.setAttribute("id","multiselect_dropdown_styles");
 document.head.appendChild(style);
