@@ -1,3 +1,26 @@
+const   body = document.querySelector("body"),
+        nav = document.querySelector("nav"),
+        sidebarOpen = document.querySelector(".sidebarOpen"),
+        sidebarClose = document.querySelector(".sidebarClose");
+        
+
+
+// Js code to toggle sidebar
+sidebarOpen.addEventListener("click" , () =>{
+  nav.classList.add("active");
+});
+
+body.addEventListener("click" , e =>{
+let clickedElm = e.target;
+
+if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu"))
+  nav.classList.remove("active"); 
+});
+
+
+var style = document.createElement('style');
+
+
 // Lille slideshow start //
 
 const wrapper = document.querySelector('.wrapper')
@@ -64,26 +87,9 @@ function showSlides(n) {
 
 // Stort slideshow slut //
 
-const   body = document.querySelector("body"),
-        nav = document.querySelector("nav"),
-        sidebarOpen = document.querySelector(".sidebarOpen"),
-        sidebarClose = document.querySelector(".sidebarClose");
-        
-
-// Js code to toggle sidebar
-        sidebarOpen.addEventListener("click" , () =>{
-                nav.classList.add("active");
-        });
-
-        body.addEventListener("click" , e =>{
-            let clickedElm = e.target;
-            
-            if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu"))
-                nav.classList.remove("active"); 
-        });
 
 
-        var style = document.createElement('style');
+
 
 // Filter funktion
 style.setAttribute("id","multiselect_dropdown_styles");
