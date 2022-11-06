@@ -291,7 +291,7 @@ nav .nav-bar .logo a img  {
 }
 
 .cardp {
-    width: 180px;
+    width: 185px;
     font-size: 14px;
 }
 
@@ -386,7 +386,8 @@ nav .nav-bar .logo a img  {
     font-weight: 600;
     font-size: 14px;
     border-radius: 2px;
-    border-color: #00454E;
+    box-shadow: 0px 2px 25px 1px rgba(0, 0, 0, 0.25);
+    border: none;
     height: 45px;
     width: 120px;
     margin-left: 190px;
@@ -408,7 +409,6 @@ nav .nav-bar .logo a img  {
         height: 200px;
         width: 300px;
         margin-bottom: 200px;
-
     }
     
     .banner {
@@ -417,13 +417,36 @@ nav .nav-bar .logo a img  {
     }
     .cardp {
         width: 160px;
-        font-size: 11px;
+        font-size: 12px;
     }
     .containerarrangement {
         height: 120px;
         width: 300px;
         padding: 20px;
         margin-top: -10px;
+    }
+    .laesmere {
+        font-size: 13px;
+        height: 45px;
+        width: 120px;
+        margin-left: 145px;
+        margin-top: 0px;
+    }
+
+    .h1arrangement {
+        font-size: 20px;
+    }
+
+    .h2arrangement {
+        font-size: 12px;
+    }
+
+    .h1klubber {
+        font-size: 20px;
+    }
+
+    .h2klubber {
+        font-size: 12px;
     }
 }
 
@@ -464,6 +487,30 @@ nav .nav-bar .logo a img  {
         margin-left: 5px;
         height: 10px;
     }
+
+    .h1arrangement {
+        font-size: 20px;
+    }
+
+    .h2arrangement {
+        font-size: 12px;
+    }
+    
+    .h1klubber {
+        font-size: 20px;
+    }
+
+    .h2klubber {
+        font-size: 12px;
+    }
+
+    .opretarrangement {
+        padding: 6px 12px;
+        margin-top: 30px;
+        font-size: 13px;
+        height: 45px;
+        width: 160px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -499,10 +546,15 @@ nav .nav-bar .logo a img  {
         margin-left: 110px;
         margin-top: -10px;
     }
-    .laesmerepil {
-        margin-left: 5px;
-        height: 10px;
+
+    .opretarrangement {
+        padding: 6px 12px;
+        margin-top: 30px;
+        font-size: 12px;
+        height: 45px;
+        width: 150px;
     }
+
 }
 
 @media (max-width: 660px) {
@@ -519,7 +571,7 @@ nav .nav-bar .logo a img  {
         width: 250px;
     }
     .cardp {
-        width: 120px;
+        width: 112px;
         font-size: 11px;
     }
     .containerarrangement {
@@ -538,10 +590,31 @@ nav .nav-bar .logo a img  {
         margin-left: 110px;
         margin-top: -10px;
     }
-    .laesmerepil {
-        margin-left: 5px;
-        height: 10px;
+
+    .h1arrangement {
+        font-size: 18px;
     }
+
+    .h2arrangement {
+        font-size: 10px;
+    }
+
+    .h1klubber {
+        font-size: 18px;
+    }
+
+    .h2klubber {
+        font-size: 10px;
+    }
+
+    .opretarrangement {
+        padding: 6px 12px;
+        margin-top: 30px;
+        font-size: 11px;
+        height: 40px;
+        width: 130px;
+    }
+
 }
 
 /* Studierabat */
@@ -639,6 +712,122 @@ nav .nav-bar .logo a img  {
     color: #FFFFFF;
     cursor: pointer;
 }
+
+@media (max-width: 1200px) {
+    .studierabatcard {
+        height: 150px;
+        width: 150px;
+        margin-bottom: 200px;
+    }
+    
+    .bannerstudierabat {
+        height: 150px;
+        width: 150px;
+    }
+    .pstudierabat {
+        width: 130px;
+        font-size: 10px;
+        margin-left: -10px;
+    }
+    .containerstudierabat {
+        height: 140px;
+        width: 150px;
+        padding: 20px;
+        margin-top: -10px;
+    }
+    .laesmerestudierabat {
+        font-size: 10px;
+        height: 35px;
+        width: 110px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .studierabat2 {
+        margin-bottom: -200px;
+    }
+
+    .h1studierabat {
+        font-size: 20px;
+    }
+
+    .h2studierabat {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .studierabat2 {
+        margin-bottom: 100px;
+    }
+    .h1studierabat {
+        font-size: 20px;
+    }
+
+    .h2studierabat {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 750px) {
+    .studierabat2 {
+        margin-bottom: 500px;
+    }
+    .h1studierabat {
+        font-size: 18px;
+    }
+
+    .h2studierabat {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .studierabatcard {
+        height: 100px;
+        width: 100px;
+        margin-bottom: 200px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    .bannerstudierabat {
+        height: 100px;
+        width: 100px;
+    }
+    .pstudierabat {
+        width: 85px;
+        font-size: 10px;
+        margin-left: -4px;
+    }
+    .containerstudierabat {
+        height: 130px;
+        width: 100px;
+        padding: 10px;
+        margin-top: -10px;
+    }
+    .laesmerestudierabat {
+        font-size: 9px;
+        height: 35px;
+        width: 80px;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding: 4px 8px;
+    }
+    .studierabat2 {
+        margin-bottom: 250px;
+    }
+    .h4studierabat {
+        font-size: 12px;
+    }
+    .h1studierabat {
+        font-size: 16px;
+    }
+
+    .h2studierabat {
+        font-size: 10px;
+    }
+}
+
 
 
 /* Filter */
