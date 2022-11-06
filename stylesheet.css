@@ -253,7 +253,7 @@ nav .nav-bar .logo a img  {
     }
 }
 
-/* Arrangeemnt & Klubber section */
+/* Arrangement & Klubber section */
 .klubbermarkering {
     display: flex;
     background-color: #F1C9C0;
@@ -1006,7 +1006,7 @@ main {
     display: inline-block;
     width: var(--width);
     height: var(--height);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 25px 1px rgba(0, 0, 0, 0.25);
     cursor: pointer;
     top: -50px;
     margin-left: 5%;
@@ -1078,6 +1078,7 @@ main {
     opacity: 1;
   }
 /* end toggle Bliv medlem*/
+
 
 
 
@@ -1222,8 +1223,6 @@ p.date {
     padding-left: 10px;
     padding-top: 14px;
     margin-right: 2em;
-    
-
 }
 
 p.info {
@@ -1302,7 +1301,7 @@ p.info {
     
     min-width: 40px;
     min-height: 48px;
-    box-shadow: 3px 6px var(--text-color);
+    box-shadow: 0px 2px 25px 1px rgba(0, 0, 0, 0.25);
     border: none;
     border-radius: 5px;
     background-color:var(--text-color);
@@ -1325,14 +1324,174 @@ p.info {
     cursor: pointer;
 }
 
+@media (max-width: 1200px) {
+
+    .box3 {
+        display: flex;
+        flex-direction: row;
+        background-color: var(--text-box);
+        box-shadow: 3px 6px var(--text-color);     
+    }
+    p.date {
+        color: #00454E; 
+        font-family: proxima-nova,sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.5em;
+        padding-left: 10px;
+        padding-top: 14px;
+        margin-right: 2em;
+    } 
+    p.besktext {
+        color: #00454E; 
+        font-family: proxima-nova,sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        padding-left: 10px;
+        padding-top: 14px;
+    }
+    .box2 {
+        position: relative;
+        width: 400px;
+        height: 300px;
+        background-color: var(--text-box);
+        box-shadow: 3px 6px var(--text-color); 
+    }
+}
+
+@media (max-width: 1050px) {
+    .box2 {
+        width: 300px;
+        height: 340px;
+        background-color: var(--text-box);
+        box-shadow: 3px 6px var(--text-color); 
+    }
+    p.date {
+        color: #00454E; 
+        font-family: proxima-nova,sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.5em;
+        padding-left: 10px;
+        padding-top: 14px;
+        margin-right: 2em;
+    } 
+    p.besktext {
+        color: #00454E; 
+        font-family: proxima-nova,sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        padding-left: 10px;
+        padding-top: 14px;
+    }
+    .move {
+        margin-left: 20%;
+        margin-top: -15px;   
+    }
+}
+@media (max-width: 1000px) {
+    .move {
+        margin-left: 50%;
+        margin-top: -150px;  
+
+    }
+    .imgmap {
+     
+        height: 200px;
+        width: 200px;
+    }
+
+}
+@media (max-width: 879px)  {
+    .move {
+        margin-left: 50%;
+        margin-top: -130px;  
+
+    }
+}
+@media (max-width: 783px) {
+    .move {
+        margin-left: 50%;
+        margin-top: -50px;  
+
+    }
+
+}
+@media (max-width: 783px) {
+    .split {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .move {
+        margin-left: 10%;
+        margin-top: -5px;  
+
+    }
+    p.date {
+        color: #00454E; 
+        font-family: proxima-nova,sans-serif;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 1.5em;
+        padding-left: 10px;
+        padding-top: 14px;
+        margin-right: 5em;
+    } 
+   
+    p.besktext {
+        color: #00454E; 
+        font-family: proxima-nova,sans-serif;
+        font-size: 22px;
+        font-weight: 500;
+        padding-left: 10px;
+        padding-top: 14px;
+    }
+    .imgmap {
+     
+        height: 300px;
+        width: 300px;
+    }
+
+    .box2 {
+        width: 670px;
+        height: 300px;
+        background-color: var(--text-box);
+        box-shadow: 3px 6px var(--text-color); 
+    }
+    .btntilb {
+    
+        min-width: 40px;
+        min-height: 48px;
+        box-shadow: 0px 2px 25px 1px rgba(0, 0, 0, 0.25);
+        border: none;
+        border-radius: 5px;
+        background-color:var(--text-color);
+        font-family: proxima-nova,sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+        position: relative;
+        bottom: 10px;
+        color: var(--text-color-dark);
+        cursor: pointer;
+        padding: 15px 32px;
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+}
+
+
 
 
 
 /* end specifik Klub*/
 
 
+
 /* start Kalender */
-.kalenderhead{
+.kalenderhead {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -1545,3 +1704,201 @@ p.info {
         padding-left: 50px;
     }
 }
+
+
+/* Start forside */ 
+
+/* Top linje forside start */
+.forsidemarkering {
+    display: flex;
+    background-color: #E07057;
+    flex-direction: column;
+    width: 100%;
+}
+
+.h1forside {
+    color: #00454E;
+    background-size: 95px;
+    margin-top: 97px;
+    font-family: proxima-nova,sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    padding-top: 2px;
+    padding-left: 4%;
+}
+
+.h2forside {
+    color: #00454E;
+    background-size: 95px;
+    font-family: proxima-nova,sans-serif;
+    font-size: 14px;
+    margin-top: -3px;
+    padding-top: -6px;
+    padding-bottom: 4px;
+    padding-left: 4%;
+}
+
+/* Top linje forside slut */
+
+/* Stort Slideshow start */
+
+
+
+.slideshow-container {
+    max-width: 80vw;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.mySlides {
+    display:none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position:absolute;
+    top: 35%;
+    width:auto;
+    color: white;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.pilv, .pilh {
+    width: 7vw;
+}
+
+.prev, .next {
+    margin-left: -3.4vw;
+    margin-right: -3.4vw;
+}
+
+.next {
+    right: 0; 
+}
+
+.dot {
+    cursor: pointer;
+    height: 1vw;
+    width: 1vw;
+    margin: 0 4px;
+    margin-top: 10px;
+    background-color: var(--text-color);
+    outline: solid 1px gray;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    user-select: none;
+}
+
+.active, .dot:hover {
+    background-color: var(--text-color-dark);
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 0.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  .btn1, .btn2, .btn3, .btn4 {
+    width: 17vw;
+    height: 4vw;
+    box-shadow: 0px 2px 25px 1px rgba(0, 0, 0, 0.25);
+    border: none;
+    background-color:var(--text-color);
+    font-family: proxima-nova,sans-serif;
+    font-size: 1.3vw;
+    font-weight: 700;
+    text-align: center;
+    position:absolute;
+    color: var(--text-color-dark);
+    padding: 1px 1px;
+    top: 23vw;
+    left: 75%;
+    cursor: pointer;
+    }
+
+.btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover {
+        background-color:var(--nav-color);
+        color: var(--text-color);
+        border: none;
+        cursor: pointer;
+    }
+
+/* Stort Slideshow slut */
+
+@media(min-width: 720px) {
+    .wrapper {
+        display: none;
+    }
+}
+
+/* Lille Slideshow start */
+
+@media(max-width: 720px) {
+
+.slideshow-container {
+    display: none;
+}
+
+.wrapper {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display:flex;
+    grid-gap: 5px;
+    width: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x;
+    cursor: grab;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+.wrapper::-webkit-scrollbar {
+    display:none;
+}
+
+.slider {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    user-select: none;
+}
+
+.btn1, .btn2, .btn3, .btn4 {
+width: 140px;
+height: 40px;
+box-shadow: 0px 2px 25px 1px rgba(0, 0, 0, 0.25);
+border: none;
+background-color:var(--text-color);
+font-family: proxima-nova,sans-serif;
+font-size: 13px;
+font-weight: 700;
+text-align: center;
+position:absolute;
+color: var(--text-color-dark);
+padding: 1px 1px;
+top: 81.1%;
+left: 56.1%;
+}
+
+.btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover {
+    background-color:var(--nav-color);
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+}
+
+}
+
+/* Lille Slideshow slut */
