@@ -1637,7 +1637,7 @@ p.info {
     cursor: pointer;
     }
 
-    button:hover {
+.btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover {
         background-color:var(--nav-color);
         color: var(--text-color);
         border: none;
@@ -1677,7 +1677,6 @@ p.info {
     display:none;
 }
 
-
 .slider {
     position: relative;
     display:flex;
@@ -1704,7 +1703,7 @@ top: 81.1%;
 left: 56.1%;
 }
 
-button:hover {
+.btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover {
     background-color:var(--nav-color);
     color: var(--text-color);
     border: none;
