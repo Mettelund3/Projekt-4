@@ -1619,7 +1619,7 @@ p.info {
     to {opacity: 1}
   }
 
-  button {
+  .btn1, .btn2, .btn3, .btn4 {
     width: 17vw;
     height: 4vw;
     box-shadow: 0px 2px 25px 1px rgba(0, 0, 0, 0.25);
@@ -1652,6 +1652,7 @@ p.info {
     }
 }
 
+/* Lille Slideshow start */
 
 @media(max-width: 720px) {
 
@@ -1660,6 +1661,8 @@ p.info {
 }
 
 .wrapper {
+    margin-top: 50px;
+    margin-bottom: 50px;
     display:flex;
     grid-gap: 5px;
     width: 100%;
@@ -1674,6 +1677,7 @@ p.info {
     display:none;
 }
 
+
 .slider {
     position: relative;
     display:flex;
@@ -1683,8 +1687,7 @@ p.info {
     user-select: none;
 }
 
-
-button {
+.btn1, .btn2, .btn3, .btn4 {
 width: 140px;
 height: 40px;
 box-shadow: 0px 2px 25px 1px rgba(0, 0, 0, 0.25);
@@ -1699,9 +1702,7 @@ color: var(--text-color-dark);
 padding: 1px 1px;
 top: 81.1%;
 left: 56.1%;
-
 }
-
 
 button:hover {
     background-color:var(--nav-color);
@@ -1711,3 +1712,5 @@ button:hover {
 }
 
 }
+
+/* Lille Slideshow slut */
