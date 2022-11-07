@@ -2060,3 +2060,17 @@ input[type=text] {
 }
 
 /* Profil header slut*/
+
+
+/* Profil side start*/
+
+.studiekort {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+}
+
+
+/* Profil side slut*/
