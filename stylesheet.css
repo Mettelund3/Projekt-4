@@ -280,9 +280,8 @@ nav .nav-bar .logo a img  {
 
 .hej {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
-    max-width: 1300px;
+    justify-content: space-around;
+    max-width: 100%;
 
 }
 
@@ -320,6 +319,7 @@ nav .nav-bar .logo a img  {
     background-color: #00454E;
     padding: 12px 22px;
     margin-top: 30px;
+    margin-left: -4vw;
     font-family: proxima-nova,sans-serif;
     font-weight: 600;
     font-size: 14px;
@@ -507,6 +507,11 @@ nav .nav-bar .logo a img  {
         height: 45px;
         width: 160px;
     }
+
+    .multiselect-dropdown {
+        height: auto;
+        max-width: 160px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -551,6 +556,10 @@ nav .nav-bar .logo a img  {
         width: 150px;
     }
 
+    .multiselect-dropdown {
+        height: auto;
+        max-width: 150px;
+    }
 }
 
 @media (max-width: 660px) {
@@ -609,6 +618,11 @@ nav .nav-bar .logo a img  {
         font-size: 11px;
         height: 40px;
         width: 130px;
+    }
+
+    .multiselect-dropdown {
+        height: auto;
+        max-width: 130px;
     }
 
 }
@@ -844,8 +858,9 @@ nav .nav-bar .logo a img  {
     background-repeat: no-repeat;
     background-position: right .75rem center;
     background-size: 16px 12px;
-    height: 50px;
+    height: auto;
     margin-top: 30px;
+    margin-right: -4vw;
 }
 
 .multiselect-dropdown span.optext, .multiselect-dropdown span.placeholder{
@@ -1905,6 +1920,14 @@ left: 52%;
 
 /* Lille Slideshow slut */
 
+/* Forside card tekst start */
+
+.cardaftaler {
+    color: var(--nav-color);
+    margin-left: 18vw;
+}
+
+
 /* Opret klub header start*/
 
 .opretklubmarkering {
@@ -1974,10 +1997,10 @@ left: 52%;
 /* Opret klub og arrangement side start*/
 
 label { 
-    color: #00454E;
+    color: #fff;
     font-family: proxima-nova,sans-serif;
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 500;
 }
 
 input[type=text] {
