@@ -2110,7 +2110,7 @@ input[type=text] {
     height: 1000px;
 }
 
-.laesmere {
+.rediger {
     color: #00454E;
     background-color: #ffffff;
     padding: 8px 15px;
@@ -2126,7 +2126,7 @@ input[type=text] {
     margin-top: -10px;
 }
 
-.laesmere:hover {
+.rediger:hover {
     background-color: #00454E;
     color: #FFFFFF;
     cursor: pointer;
