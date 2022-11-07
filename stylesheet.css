@@ -1903,6 +1903,35 @@ left: 52%;
 
 /* Lille Slideshow slut */
 
+.opretklubmarkering {
+    display: flex;
+    background-color: #F1C9C0;
+    flex-direction: column;
+    width: 100%;
+}
+
+.h1opretklub {
+    color: #00454E;
+    background-size: 95px;
+    margin-top: 97px;
+    font-family: proxima-nova,sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    padding-top: 2px;
+    padding-left: 4%;
+}
+
+.h2opretklub {
+    color: #00454E;
+    background-size: 95px;
+    font-family: proxima-nova,sans-serif;
+    font-size: 14px;
+    margin-top: -3px;
+    padding-top: -6px;
+    padding-bottom: 4px;
+    padding-left: 4%;
+}
+
 /* Opret klub side start*/
 
 input[type=text] {
@@ -1924,6 +1953,7 @@ input[type=text] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-family: proxima-nova,sans-serif;
   }
   
   input[type=submit]:hover {
@@ -1935,10 +1965,7 @@ input[type=text] {
     border-radius: 5px;
     background-color: #E4F1F0;
     padding: 20px;
-    margin-top: 20%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
+
   }
 
 
