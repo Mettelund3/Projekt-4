@@ -282,8 +282,8 @@ nav .nav-bar .logo a img  {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    justify-content: space-around;
     max-width: 1300px;
+
 }
 
 .cardp {
@@ -844,6 +844,8 @@ nav .nav-bar .logo a img  {
     background-repeat: no-repeat;
     background-position: right .75rem center;
     background-size: 16px 12px;
+    height: 50px;
+    margin-top: 30px;
 }
 
 .multiselect-dropdown span.optext, .multiselect-dropdown span.placeholder{
