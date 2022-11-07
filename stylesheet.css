@@ -2004,5 +2004,42 @@ input[type=text] {
     padding: 20px;
   }
 
+  @media(min-width: 720px) {
+    input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      
+      input[type=submit] {
+        width: 100%;
+        background-color: #FFFFFF;
+        color: #00454E;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: proxima-nova,sans-serif;
+      }
+      
+      input[type=submit]:hover {
+        background-color: #00454E;
+        color: #FFFFFF;
+      }
+      
+      div.opret {
+        border-radius: 5px;
+        background-color: #E4F1F0;
+        padding: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+      
+}
 
 /* Opret klub og arrangement side slut*/
