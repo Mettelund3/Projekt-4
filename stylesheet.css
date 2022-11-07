@@ -2082,7 +2082,7 @@ input[type=text] {
     width: 350px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: -50px;
+    margin-bottom: -30px;
 }
 
 
@@ -2111,12 +2111,12 @@ input[type=text] {
 }
 
 .rediger {
-    color: #00454E;
-    background-color: #ffffff;
+    color: #FFFFFF;
+    background-color: #00454E;
     padding: 8px 15px;
     font-family: proxima-nova,sans-serif;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
     border-radius: 2px;
     box-shadow: 0px 2px 25px 1px rgba(0, 0, 0, 0.25);
     border: none;
@@ -2134,6 +2134,12 @@ input[type=text] {
 
 .laesmerepil {
     margin-left: 5px;
+}
+
+.kortp {
+    width: 185px;
+    font-size: 14px;
+    font-family: proxima-nova,sans-serif;
 }
 
 /* Profil side  slut*/
