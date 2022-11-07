@@ -54,9 +54,34 @@
 
    <section>
 
-</section>
-<section>
+    <div class="opretarrangementmarkering">
+        <h1 class="h1opretarrangement">Opret et arrangement</h1>
+        <h2 class="h2opretarrangement">Obs. felter med * skal udfyldes </h2>
+    </div>
 
+</section>
+
+<section>
+    <div class="opret">
+    <form action="/action_page.php" method="post">
+        <label for="arrangementnavn">Arrangement navn*</label><br>
+            <input type="text" id="arrangementnavn" name="arrangementnavn" required><br>
+        <label for="tilføjbannerbillede">Tilføj bannerbillede*</label><br>
+            <input type="text" id="tilføjbannerbillede" name="tilføjbannerbillede" required><br>
+        <label for="arrangementadministratornavn">Arrangement administrator navn*</label><br>
+            <input type="text" id="arrangementadministratornavn" name="arrangementadministratornavn" required><br>
+        <label for="tilføjbeskrivelse">Tilføj beskrivelse*</label><br>
+            <textarea id="freeform" name="freeform" required rows="4" cols="50"></textarea><br>
+        <label for="afdelingarrangement">Afdeling arrangementet holder til ved*</label><br>
+            <input type="text" id="afdelingarrangement" name="afdelingarrangement" required><br>
+        <label for="tilføjmedadministratorer">Tilføj medadministratorer</label><br>
+            <input type="text" id="tilføjmedadministratorer" name="tilføjmedadministratorer"><br>
+        <label for="maxdeltagerantal">Maxdeltager antal</label><br>
+            <input type="text" id="maxdeltagerantal" name="maxdeltagerantal"><br>
+
+         <input type="submit" value="Opret arrangement">
+    </form>
+    </div>
 </section>
 
 <Footer class="footer">
