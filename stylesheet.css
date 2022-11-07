@@ -1936,45 +1936,10 @@ input[type=text] {
     background-color: #E4F1F0;
     padding: 20px;
     margin-top: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
   }
 
-  @media(max-width: 720px) {
-    .wrapper {
-        display: none;
-    }
-
-    input[type=text] {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-      }
-      
-      input[type=submit] {
-        width: 100%;
-        background-color: #FFFFFF;
-        color: #00454E;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-      
-      input[type=submit]:hover {
-        background-color: #00454E;
-        color: #FFFFFF;
-      }
-      
-      div.opretklub {
-        border-radius: 5px;
-        background-color: #E4F1F0;
-        padding: 20px;
-        margin-top: 5%;
-      }
-}
 
 /* Opret klub side slut*/
