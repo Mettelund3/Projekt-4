@@ -1903,6 +1903,8 @@ left: 52%;
 
 /* Lille Slideshow slut */
 
+/* Opret klub header start*/
+
 .opretklubmarkering {
     display: flex;
     background-color: #F1C9C0;
@@ -1931,6 +1933,8 @@ left: 52%;
     padding-bottom: 4px;
     padding-left: 4%;
 }
+
+/* Opret klub header slut*/
 
 /* Opret klub side start*/
 
@@ -1965,7 +1969,6 @@ input[type=text] {
     border-radius: 5px;
     background-color: #E4F1F0;
     padding: 20px;
-
   }
 
 
