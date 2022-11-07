@@ -2027,3 +2027,36 @@ input[type=text] {
 }
 
 /* Opret klub og arrangement side slut*/
+
+/* Profil header start*/
+
+.profilmarkering {
+    display: flex;
+    background-color: #47B9B3;
+    flex-direction: column;
+    width: 100%;
+}
+
+.h1profil {
+    color: #00454E;
+    background-size: 95px;
+    margin-top: 97px;
+    font-family: proxima-nova,sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    padding-top: 2px;
+    padding-left: 4%;
+}
+
+.h2profil {
+    color: #00454E;
+    background-size: 95px;
+    font-family: proxima-nova,sans-serif;
+    font-size: 14px;
+    margin-top: -3px;
+    padding-top: -6px;
+    padding-bottom: 4px;
+    padding-left: 4%;
+}
+
+/* Profil header slut*/
