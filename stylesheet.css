@@ -2087,8 +2087,8 @@ input[type=text] {
 
 
 .profilkort {
-    display: column;
-    flex-direction: row;
+    display: block;
+    flex-direction: column;
     justify-content:center;
     flex-wrap: wrap;
     margin-bottom: 40px;
