@@ -160,7 +160,6 @@ window.addEventListener('load',()=>{
 
 "use strict";
 
-// function that creates dummy data for demonstration
 function createDummyData() {
   var date = new Date();
   var data = {};
