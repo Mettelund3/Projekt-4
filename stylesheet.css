@@ -2312,9 +2312,9 @@ input[type=text] {
     cursor: pointer;
   }
   
-  .modal-header {
+  .modal-header1 {
     padding: 2px 16px;
-    background-color: #FBE355;
+    background-color: #F1C9C0;
     color: #00454E;
     text-align: center;
     font-weight: 500;
@@ -2341,4 +2341,4 @@ input[type=text] {
     text-align: center;
   }
 
-/* Opretarrangement popup  slut*/
+/* Opretklub popup  slut*/

@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opret Klub</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="script.js" defer></script>     
+    <script src="script.js" defer></script> 
+    <script src="popup.js" defer></script>     
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.typekit.net/ulx5pgg.css">
     <link rel="stylesheet" href="https://use.typekit.net/ulx5pgg.css">
@@ -80,9 +81,27 @@
         <label for="maxdeltagerantal">Maxdeltager antal</label><br>
             <input type="text" id="maxdeltagerantal" name="maxdeltagerantal"><br>
 
-         <input type="submit" value="Opret klub">
+            <button id="myBtn"><input type="submit" value="Opret klub"></button>
     </form>
     </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header1">
+            <span class="close">&times;</span>
+              <h2>Klub oprettet!</h2>
+          </div>
+          <div class="modal-body">
+              <h3>OBS!</h3>
+              <p>Du kan altid redigere dine klubber under din "Profil" side</p>
+          </div>
+          <div class="modal-footer">
+              <h3>Profil</h3>
+          </div>
+        </div>
+      
+      </div>
+
 </section>
 
 <Footer class="footer">
