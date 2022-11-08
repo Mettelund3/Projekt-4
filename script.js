@@ -50,7 +50,6 @@ function MultiselectDropdown(options){
     return e;
   }
 
-  
   document.querySelectorAll("select[multiple]").forEach((el,k)=>{
     
     var div=newEl('div',{class:'multiselect-dropdown',style:{width:config.style?.width??el.clientWidth+'px',padding:config.style?.padding??''}});
