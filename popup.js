@@ -1,10 +1,11 @@
 
+// Modal //
 var modal = document.getElementById("myModal");
 
-
+// Knap //
 var btn = document.getElementById("myBtn");
 
-
+// Lukke knap //
 var span = document.getElementsByClassName("close")[0];
 
 
